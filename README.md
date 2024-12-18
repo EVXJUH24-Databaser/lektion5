@@ -28,6 +28,43 @@ De kan användas för enkla värden (string array) men skall undvikas om det gå
 
 ---
 
+# Fråga
+
+Är det bara när `+` används som det finns risk för SQL-injection? "Får" man skriva så här `String sql = "SELECT * FROM transactions";`
+
+# Svar
+
+Ja, det stämmer. Om inga argument krävs kan man skriva SQL koden rakt av.
+
+---
+
+# Fråga
+
+Jag läste en artikel på Medium (<https://medium.com/@jamieblomerus/databass%C3%A4kerhet-och-%C3%A5tkomstkontroll-i-microsoft-sql-server-6686732f47b1>) 
+
+Kan du berätta mer om databassäkerhet, som "Principen om lägsta behörighet" och "Lagrade procedurer" och om det är någonting mer som kan vara bra för oss att veta.
+
+# Svar
+
+Vi kommer in på säkerhet i framtiden.
+
+---
+
+# Fråga
+
+Jag har sett att man kan jobba som Databasadministratör. 
+Vad gör en sådan och hur kan det vara ett heltidsjobb?
+
+# Svar
+
+- Säkrar databaser (tabeller, lösenord, användare)
+- Skapar och hanterar backups
+- Utvecklar och designar tabeller
+- Övervakar prestanda och överser förbättringar
+- Hanterar "migrations"
+
+---
+
 # Exempel med relationer
 
 - E-commerce: produkter och ordrar
@@ -145,6 +182,12 @@ INNER JOIN users
   ON users.id = user_repos.user_id 
 WHERE users.name = 'Ironman';
 ```
+
+---
+
+# Joins bild
+
+![illustration](https://github.com/EVXJUH24-Databaser/lektion5/blob/main/db-lek5.png?raw=true)
 
 ---
 
